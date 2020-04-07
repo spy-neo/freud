@@ -25,9 +25,9 @@ except ImportError:
 	print '(o o)'.center(44)
 	print 'ooO--(_)--Ooo'.center(44)
 	print W + ' '
-	print ('O S I F').center(44)
+	print ('FREUD').center(44)
 	print ' '
-	print "[!] Modül içe aktarılamıyor: 'requests'\n"
+	print "[!] Modul ice aktarilamiyor: 'requests'\n"
 	sys.exit()
 ####################################################################
 #                    Set Default encoding
@@ -84,28 +84,28 @@ def show_program():
 def info_ga():
 
 	print '''
-     %sCOMMAND                      DESCRIPTION%s
+     %sKomutlar                    Açıklama%s
   -------------       -------------------------------------
 
-   get_data           fetching all friends data
-   get_info           show information about your friend
+   get_data           tüm arkadaş verilerini alıyor
+   get_info           arkadaşın hakkında bilgi göster
 
-   dump_id            fetching all id from friend list
-   dump_phone         fetching all phone number from friend list
-   dump_mail          fetching all emails from friend list
-   dump_<id>_id       fetching all id from your friends <spesific>
+   dump_id            arkadaş listesinden tüm kimliği alınıyor
+   dump_phone         arkadaş listesinden tüm telefon numaralarını getirme
+   dump_mail          arkadaş listesinden tüm e-postalar getiriliyor
+   dump_<id>_id       arkadaşlarınızdan tüm kimliği getirme <specific>
 		      ex: dump_username_id
 
-   token              Generate access token
-   cat_token          show your access token
-   rm_token           remove access token
+   token              Erişim kodu oluştur
+   cat_token          Erişim kodunuzu gösterir
+   rm_token           Erişim kodunu kaldır
 
    bot                open bot menu
 
-   clear              clear terminal
-   help               show help
-   about              Show information about this program
-   exit               Exit the program
+   clear              terminal'i temizle
+   help               yardım
+   about              tool hakkında bilgiler
+   exit               programı kapat
 '''%(G,W)
 def menu_bot():
 	print '''
