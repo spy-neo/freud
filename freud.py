@@ -113,12 +113,10 @@ def menu_bot():
 
    [ 01 ]      oto begeni
    [ 02 ]      oto yorum
-   [ 03 ]      oto poke
-   [ 04 ]      butun arkadas isteklerini kabul et
-   [ 05 ]      butun gonderileri sil
-   [ 06 ]      butun arkadaslari sil
-   [ 07 ]      takip etmeyi durdur
-   [ 08 ]      butun fotograflari sil
+   [ 03 ]      oto poke     
+   [ 04 ]      butun arkadaslari sil
+   [ 05 ]      takip etmeyi durdur
+   [ 06 ]      butun fotograflari sil
 
    [ 00 ]      back to main menu
 '''%(G,W)
